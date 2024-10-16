@@ -82,8 +82,8 @@ class FailedAuthenticationEntryPoint implements AuthenticationEntryPoint {
             AuthenticationException authException) throws IOException, ServletException {
 
         res.setContentType("application/json");
-        res.setStatus(HttpServletResponse.SC_FORBIDDEN);
-        res.getWriter().write("{ \"code\": \"NP\", \"message\": \"Do not have permission.\"}");
+        res.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
+        res.getWriter().write("{ \"code\": \"AF\", \"message\": \"Authorization Failed.\"}");
     }
 
     
