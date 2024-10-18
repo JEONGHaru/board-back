@@ -14,7 +14,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Entity(name = "search_log")
 @Table(name = "search_log")
-public class SearchLog {
+public class SearchLogEntity {
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

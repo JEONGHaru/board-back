@@ -37,7 +37,7 @@ public class SignUpRequestDto {
     
     @NotNull
     @AssertTrue
-    private Boolean agredPersonal;
+    private Boolean agreedPersonal;
     
     
 }
